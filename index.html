@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AIS : HALT</title>
+        <style>
+        *{
+margin: 0;
+padding: 0;
+}    
+                
+        body
+            {
+              background-color: black;
+            }
+     .img{
+        height: 250px;
+        width: 250px;
+        top: 20%;
+        left: 25%;
+     }
+    .container{ 
+        color: rgb(241, 182, 103);
+    position: absolute;
+    top: 25%;
+    left: 40%; 
+    text-align: center;
+}
+
+.box{
+    width: 100%; 
+    margin: 22px 0px;
+    border-bottom: 2px solid rgb(248, 216, 128);
+}.box input{  
+    background: none;
+    width: 75%;
+    padding: 5px 10px;
+    font-size: 20px;
+    border: none;
+    outline:none;
+    color: white;
+}
+.btn{
+    color: white;
+    cursor: pointer;
+    outline: none; 
+    margin: 12px 10px;
+    padding: 10px 21px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 18px;
+    background: none;
+    font-weight: bold;
+    left: 40%;
+    
+}
+.btn:hover{
+    opacity: 0.5;
+    color: rgb(51, 146, 224); 
+    background: white; 
+    
+}
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <!--<h1>Log In</h1>
+            <div class="box">
+                <i class="fa fa-envelope"></i>
+                <input type="email" name="email" id="email" placeholder="Enter Your Email">
+            -->
+       
+       <img src="AIS.png">
+       <h4>Track vessels Realtime</h4>
+       <br></br>
+       <form>
+        <form method = "POST" action = "">
+
+            <label for = "shipnum">MMSI Number</label>
+            <input type = 'text' id = 'shipnum', name = 'sn', required = 'required' >
+            
+            <br></br>
+            
+            <label for = "shipname">Vessel Name</label>
+            <input type = 'text' id = 'shipname, name = 'shn', required = 'required'>
+
+           <!--<select id="gender" name="Gender">
+                  <option value="1">Male</option>
+                  <option value="0">Female</option>
+                  <option value="-1">Other</option>
+            </select>-->
+            
+            <br></br>
+       
+        <button class="btn">TRACK</button>
+    </div>
+            
+       </form>
+    </body>
+</html>
